@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: rgb(247, 231, 231);
+    --text-color: rgb(11, 11, 11);
+    --second-color: #685f78;
+    --main-color: #f66962;
+    --big-font: 3.8rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 23px 13%;
+    transition: all .40s ease;
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.logo{
+    padding-right: 100px;
+    margin-top: 10px;
+}
+header ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+header ul li a:hover{
+    color: var(--main-color);
+    transform: scale(1.2);
+}
+.header-icons{
+    display: flex;
+    align-items: center;
+}
+.header-icons i{
+    margin-left: 15px;
+    color: var(--text-color);
+    margin-right: 10px;
+    transition: all .40s ease;
+    font-size: 24px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: var(--p-font);
+    padding: 10px 20px;
+    transition: all .40s ease;
+}
+.header-icons i:hover{
+    color: var(--main-color);
+    transform: scale(1.2);
+}
+#menu-icon{
+    font-size: 34px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+    transform: scale(1.2);
+}
+
+section{
+    padding: 84px 13%;
+}
+.home{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: url(image/bgimage.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    margin: 20px;
+}
+h6{
+    padding-top: 20px;
+}
+
+.home-img{
+    display: grid;
+}
